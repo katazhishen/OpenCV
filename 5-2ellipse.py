@@ -4,14 +4,17 @@ import numpy as np
 img = np.zeros((480, 640, 3), np.uint8)
 
 
-cv2.ellipse(img, (320, 240), 
-            (100, 50), 0, 0, 360, 
-            (255, 0, 0), 2)
-
+cv2.ellipse(img, (250, 240), 
+            (100, 50), 30, 60, 270, 
+            (0, 0, 255), 33)
+cv2.ellipse(img, (300, 240), 
+            (100, 50), 150, 90, 300, 
+            (0, 0, 255), 33)
 
 
 
 
 cv2.imshow("5-2ellipse", img)
-cv2.waitKey(0)
+while cv2.waitKey(1) != ord("q"):
+    pass
 cv2.destroyAllWindows()
