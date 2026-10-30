@@ -5,7 +5,7 @@ cv2.resizeWindow("local_video", 640, 360)
 
 
 
-cap = cv2.VideoCapture("111.mp4")
+cap = cv2.VideoCapture("车辆识别/test.mp4")
 
 w = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
 h = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
